@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF9DC;
+    border: 0px;
+    padding: 0px;
+}
+/* inicio do cabeçalho */
+header{
+    background-image:linear-gradient(#5E0406, black) ;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.redes_sociais img{
+    width: 40px;
+    height: 40px;
+}
+ul li{
+    list-style: none;
+}
+nav{
+    padding: 15px;
+}
+nav ul{
+    justify-content: space-around;
+}
+nav li{
+    text-align: center;
+    color: #5E0406;
+    font-size: 15pt;
+}
+nav li:hover{
+    color: #FFF9DC;
+    background-color: #5E0406;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+/* final do cabeçalho */
+/* inicio da main */
+
+/* final da main */
+/* menu lateral */
+aside li{
+    background-color: #5E0406;
+    color: #FFF9DC;
+    display: flex;
+    flex-direction:column ;
+    width: 120px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+/* final do menu */
+/* cardapio */
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+img{
+    width: 100px;
+    height: 100px;
+    max-width: 150px;
+}
+.produto1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.valor_pedido{
+    padding-top: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+  input[type="number"]{
+  outline:none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 20px;
+  padding:1%;
+  }   
+/* final do cardapio */
