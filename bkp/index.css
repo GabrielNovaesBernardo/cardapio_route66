@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    border: 0;
+}
+body{
+    background-image: url("imagens/Background.png");
+    background-color: #FFF9DC;
+    color: #000200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* container */
+.container{
+    
+}
+
+/* nav */
+.menu nav{
+    background-image: linear-gradient( #590000,#000200 85%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 150px;
+    max-width: auto;    
+}
+.elements{
+    background-image: url(imagens/barra_menu.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: right; */
+    padding: 70px;
+    width: 100%;
+    max-width: auto;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px;
+    max-width: auto;
+    min-width: 320px;
+}
+li{
+    padding: 20px;
+    border-radius: 15px;
+}
+li:hover{
+    background-color: #590000;
+    color: #FFF9DC;
+}
+
+
+
+
+
+
