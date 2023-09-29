@@ -4,9 +4,23 @@
     padding: 0px;
 }
 body{
+    background-image: url(imagens/Background.png);
+}
+.nav-item{
+    background-color: #5E0406;
+    
+}
+.container{
     margin: auto;
 }
 .banner img{
     max-width: 800px;
     min-width: 320px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 50px;
 }
