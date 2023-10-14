@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.button {
+    background-color: #590000;
+    border: none;
+    color: white;
+    padding-right: 100%;
+    border-radius:  0px 8px 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.button_barra {
+    background-color: #590000;
+    border: none;
+    color: white;
+    padding-right: 100%;
+    border-radius:  10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+  }
+body{
+    background-image: url(imagens/Background.png);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #590000;
+}
+
+.banner{
+    background-image: url(imagens/barra_menu.png);
+    height: 170px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: auto;
+}
+
+.menu_aberto{
+    max-width: 100px;
+    display: none;
+   
+}
+.icone_menu{
+    width: 50px;
+}
+.menu_aberto ul button{
+    background-color: #590000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 50px 50px 0px;
+    padding: 10px;
+    height: 15PX;
+    gap: 15px;
+}
+.teste{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .teste{
+        display:block ;
+    }
+    
+}
+@media screen and (max-width: 501px) {
+    .button_barra{
+        display: none;
+    }
+    
+    
+}
