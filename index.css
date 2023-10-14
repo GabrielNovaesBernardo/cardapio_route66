@@ -13,60 +13,20 @@ body{
     color: #590000;
 }
 
-.banner{
+/* .banner{
     background-image: url(imagens/barra_menu.png);
-    height: 170px;
+    height: 50px;
     background-size: 100%;
     background-repeat: no-repeat;
     max-width: auto;
+} */
+.produto{
+    margin: none;
+    height: 50px;
 }
-
-.menu_aberto{
-    max-width: 108px;
-   
+.navbar{
+    /* background-color: #590000; */
 }
-
-.menu_aberto ul button{
-    background-color: #590000;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0px 50px 50px 0px;
-    padding: 10px;
-    height: 15PX;
-    gap: 15px;
-}
-.menu_aberto button:hover{
-    background-color: antiquewhite ;
-    color: black;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.teste{
-    display: none;
-    width: 50px;
-    height: 100px;
-    background-color: black;
-}
-
-@media screen and (max-width: 500px) {
-    .teste{
-        display:block ;
-    }
-    
+a{
+    color: #590000;;
 }
