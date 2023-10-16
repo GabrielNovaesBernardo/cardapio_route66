@@ -5,7 +5,7 @@
 
 // chicken
 //mostra/oculta adicionais
-function adict_one() {
+function adict_chicken() {
     var display = document.getElementById('chicken').style.display;
     if(display == "none")
         document.getElementById('chicken').style.display = 'block';
@@ -15,7 +15,7 @@ function adict_one() {
 
 // la-casa
 //mostra/oculta adicionais
-function adict_two() {
+function adict_laCasa() {
     var display = document.getElementById('la_casa').style.display;
     if(display == "none")
         document.getElementById('la_casa').style.display = 'block';

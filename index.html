@@ -6,72 +6,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/logo_icone.ico" type="image/x-icon">
     <title>Route66</title>
+    <link rel="shortcut icon" href="imagens/logo_icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="style-index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <div class="container">
-        <ul class="nav justify-content-center">
-            <li id="menu_hamburguer" class="nav-item">
-              <a class="nav-link active" href="#">Hamburguer</a>
-            </li>
-            <li id="menu_porção" class="nav-item itens">
-              <a class="nav-link" href="#">Porções</a>
-            </li>
-            <li id="menu_refrigerantes" class="nav-item">
-              <a class="nav-link" href="#">Refrigerantes</a>
-            </li>
-            <li id="menu_cerveja"class="nav-item">
-              <a class="nav-link" href="#">Cerveja</a>
-            </li>
-            <li id="menu_drinks"class="nav-item">
-              <a class="nav-link" href="#">Drink's</a>
-            </li>
-            <li id="menu_doces"class="nav-item">
-              <a class="nav-link" href="#">Doces</a>
-            </li>
-          </ul>
+<!-- barra de navegação -->
+<nav class="navbar navbar-light nav-menu">
+  <a class="navbar-brand" href="#">
+    <img src="imagens/logo_site.jpg" width="80" height="80" class="d-inline-block align-top" alt="" style="border-radius: 5px;">
+  </a>
+  <p style="font-size: 25pt; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><b>Route66</b></p>
+</nav>
+<main>
+<!-- menu -->
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-hamburguer-tab" data-toggle="pill" href="#pills-hamburguer" role="tab" aria-controls="pills-hamburguer" aria-selected="true">Hamburguer</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-porcao-tab" data-toggle="pill" href="#pills-porcao" role="tab" aria-controls="pills-porcao" aria-selected="false">Porção</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-refrigerante-tab" data-toggle="pill" href="#pills-refrigerante" role="tab" aria-controls="pills-refrigerante" aria-selected="false">Refrigerante</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-cerveja-tab" data-toggle="pill" href="#pills-cerveja" role="tab" aria-controls="pills-cerveja" aria-selected="false">Cerveja</a>
+  </li>
+</ul>
 
+<!-- inicio do cardapio -->
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-hamburguer" role="tabpanel" aria-labelledby="pills-hamburguer-tab" style="margin: auto; display: flex; flex-direction: column; justify-content: center; column-gap: 20px;">
 
+    <!-- hamburgueres -->
+    <!-- route chicken -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Chicken</h5>
+        <p class="card-text">Pão de brioche, frando gratinado, muçarela, bacon, tomate, alface e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="chicken" class="list-group-item" style="display: none;">
 
-          <main>
-
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Link do card</a>
-                <a href="#" class="card-link">Outro link</a>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
               </div>
             </div>
             
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src=".../100px180/?text=Image cap" alt="Imagem de capa do card">
-              <div class="card-body">
-                <h5 class="card-title">Título do card</h5>
-                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Link do card</a>
-                <a href="#" class="card-link">Outro link</a>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
               </div>
             </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
           
-          </main>
-          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_chicken('chicken')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
     </div>
+
+    <!-- route la casa -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route La Casa <b>40,00</b></h5>
+        <p class="card-text">Pão de brioche,6 hambirguer de  costela 90g, 6 fatias de queijo, cebola caramelizada, tomate, alface e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="la_casa" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_laCasa('la_casa')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <div class="tab-pane fade" id="pills-porcao" role="tabpanel" aria-labelledby="pills-porcao-tab">...</div>
+  <div class="tab-pane fade" id="pills-refrigerante" role="tabpanel" aria-labelledby="pills-refrigerante-tab">...</div>
+  <div class="tab-pane fade" id="pills-cerveja" role="tabpanel" aria-labelledby="pills-cerveja-tab">...</div>
+</div>
+
+
+
+
+
+</main>
 
 
 
