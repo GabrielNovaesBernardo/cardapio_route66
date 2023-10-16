@@ -37,15 +37,15 @@
 
 <!-- inicio do cardapio -->
 <div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-hamburguer" role="tabpanel" aria-labelledby="pills-hamburguer-tab" style="margin: auto; display: flex; flex-direction: column; justify-content: center; column-gap: 20px;">
+  <!-- menu hamburguer -->
+  <div class="tab-pane fade show active" id="pills-hamburguer" role="tabpanel" aria-labelledby="pills-hamburguer-tab">
 
-    <!-- hamburgueres -->
     <!-- route chicken -->
     <div class="card" style="width: 17rem;">
       <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
       <div class="card-body">
-        <h5 class="card-title">Route Chicken</h5>
-        <p class="card-text">Pão de brioche, frando gratinado, muçarela, bacon, tomate, alface e molho da casa</p>
+        <h5 class="card-title">Route Chicken <b>25,00</b></h5>
+        <p class="card-text">Pão de brioche, frango gratinado, muçarela, bacon, tomate, alface e molho da casa</p>
       </div>
       <!-- configurações dos adicionais do produto -->
       <ul class="list-group list-group-flush">
@@ -145,7 +145,7 @@
         <a onclick="adict_chicken('chicken')" href="#" class="card-link">Editar</a>
         <a href="#" class="card-link">Adicionar</a>
       </div>
-    </div>
+    </div><br>
 
     <!-- route la casa -->
     <div class="card" style="width: 17rem;">
@@ -252,9 +252,1613 @@
         <a onclick="adict_laCasa('la_casa')" href="#" class="card-link">Editar</a>
         <a href="#" class="card-link">Adicionar</a>
       </div>
-    </div>
+    </div><br>
 
+    <!-- Route Nachos -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Nachos <b>25,00</b></h5>
+        <p class="card-text">Pão de brioche, Hamburguer de costela 165g, queijo cheddar, doritos, vinagrete apimentado, tomate e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="nachos" class="list-group-item" style="display: none;">
 
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_nachos('nachos')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- smash -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Smash <b>17,00</b></h5>
+        <p class="card-text">Pão de brioche,Hamburguer de costela90g, queijo cheddar, cebola caramelizada, picles e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="smash" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_smash('smash')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- smashII -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Smash 2 <b>22,00</b></h5>
+        <p class="card-text">Pão de brioche,2 Hamburguer de costela90g, queijo cheddar, cebola caramelizada, picles e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="smashII" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_smashII('smashII')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- picanha -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route picanha <b>30,00</b></h5>
+        <p class="card-text">Pão de brioche,Hamburguer de picanha 180g, queijo cheddar, tomate, alface e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="picanha" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_picanha('picanha')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+    <!-- picanhaII -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route duplo picanha <b>40,00</b></h5>
+        <p class="card-text">Pão de brioche,2 Hamburguer de picanha 180g, queijo cheddar, tomate, alface e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="picanhaII" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_picanhaII('picanhaII')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- kids -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Kids <b>16,00</b></h5>
+        <p class="card-text">Pão de brioche,hamburguer de costela 90g, queijo cheddar e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="kids" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_kids('kids')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- onion rings -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Onion Rings <b>26,00</b></h5>
+        <p class="card-text">Pão de brioche,hamburguer de costela 165g, queijo cheddar, onion rings, bacon tomate e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="onion" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_onion('onion')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- bacon -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Bacon <b>25,00</b></h5>
+        <p class="card-text">Pão de brioche,hamburguer de costela 165g, queijo cheddar, bacon, tomate, alface molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="bacon" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_bacon('bacon')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- Queijo cremoso -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Queijo Cremoso <b>27,00</b></h5>
+        <p class="card-text">Pão de brioche,hamburguer de costela 165g, queijo, bacon, fusão de queijo muçarela-provolone, cebola roxa, tomate, alface molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="queijoCremoso" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_queijoCremoso('queijoCremoso')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- calabresa -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Calabresa <b>25,00</b></h5>
+        <p class="card-text">Pão de brioche,hamburguer de costela 165g, queijo cheddar, Calabresa, tomate, alface molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="routeCalabresa" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_routeCalabresa('routeCalabresa')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- paulistinha -->
+    <div class="card" style="width: 17rem;">
+  <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+  <div class="card-body">
+    <h5 class="card-title">Route Paulistinha <b>25,00</b></h5>
+    <p class="card-text">Pão francês artesanal, alcatra cebola, queijo e tomate (somente nas quintas-feiras)</p>
+  </div>
+  <!-- configurações dos adicionais do produto -->
+  <ul class="list-group list-group-flush">
+    <li id="paulistinha" class="list-group-item" style="display: none;">
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+          </div>
+        </div>
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Bacon 4,00
+          </div>
+        </div>
+        
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Sem salada
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Sem cebola
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+          </div>
+        </div>
+
+        <div class="input-group-prepend">
+          <div class="input-group-text" style="border-radius: 2px;">
+            <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+          </div>
+        </div>
+
+      </div>
+      
+    </li>
+  </ul>
+  <!-- fim das config dos adicionais -->
+  <!-- botões de adicionar produto e editar -->
+  <div class="card-body">
+    <a onclick="adict_paulistinha('paulistinha')" href="#" class="card-link">Editar</a>
+    <a href="#" class="card-link">Adicionar</a>
+  </div>
+    </div><br>
+
+    <!-- burguer -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Burguer <b>16,00</b></h5>
+        <p class="card-text">Pão de brioche, hamburguer de costela 90g, queijo cheddar, tomate e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="burguer" class="list-group-item" style="display: none;">
+    
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+    
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+    
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_burguer('burguer')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- bbq -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route BBQ <b>25,00</b></h5>
+        <p class="card-text">Pão de brioche,hamburguer de costela 165g, queijo cheddar, tiras de bacon, mohlho barbecue, cebola roxa, tomate e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="bbq" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_bbq('bbq')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- bbq II -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route BBQ Duplo <b>32,00</b></h5>
+        <p class="card-text">Pão de brioche,2 hamburguer de costela 165g, queijo cheddar, tiras de bacon, mohlho barbecue, cebola roxa, tomate e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="bbqII" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_bbqII('bbqII')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- salada -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route salada <b>19,00</b></h5>
+        <p class="card-text">Pão de brioche,hamburguer de costela 165g, queijo cheddar, alface, tomate e molho da casa</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="salada" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_salada('salada')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    
 
 
 
@@ -268,23 +1872,9 @@
 
 
 
+
+
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
