@@ -21,7 +21,7 @@
 <main>
 <!-- menu -->
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-  <li class="nav-item">
+  <li class="nav-item" >
     <a class="nav-link active" id="pills-hamburguer-tab" data-toggle="pill" href="#pills-hamburguer" role="tab" aria-controls="pills-hamburguer" aria-selected="true">Hamburguer</a>
   </li>
   <li class="nav-item">
@@ -142,7 +142,7 @@
       <!-- fim das config dos adicionais -->
       <!-- botões de adicionar produto e editar -->
       <div class="card-body">
-        <a onclick="adict_chicken('chicken')" href="#" class="card-link">Editar</a>
+        <a onclick="adict_chicken('chicken')"  class="card-link">Editar</a>
         <a href="#" class="card-link">Adicionar</a>
       </div>
     </div><br>
@@ -249,8 +249,9 @@
       <!-- fim das config dos adicionais -->
       <!-- botões de adicionar produto e editar -->
       <div class="card-body">
-        <a onclick="adict_laCasa('la_casa')" href="#" class="card-link">Editar</a>
-        <a href="#" class="card-link">Adicionar</a>
+        <button type="button" onclick="adict_laCasa('la_casa')" class="btn btn-primary">Editar</button>
+        
+        <button type="button" onclick="adict_laCasa('la_casa')" class="btn btn-primary">Adicionar</button>
       </div>
     </div><br>
 
@@ -681,6 +682,7 @@
         <a href="#" class="card-link">Adicionar</a>
       </div>
     </div><br>
+
     <!-- picanhaII -->
     <div class="card" style="width: 17rem;">
       <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
@@ -1858,14 +1860,310 @@
       </div>
     </div><br>
 
+    <!-- australian -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/HamburguerModelo.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Route Australian <b>29,00</b></h5>
+        <p class="card-text">Pão australiano, hamburguer de costela 220g, fusao de queijo cheddar, bacon crocante e cebola caramelizada</p>
+      </div>
+      <!-- configurações dos adicionais do produto -->
+      <ul class="list-group list-group-flush">
+        <li id="australian" class="list-group-item" style="display: none;">
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 90g 5,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Hamburguer 165g 8,00
+              </div>
+            </div>
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Bacon 4,00
+              </div>
+            </div>
+            
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Cheddar 4,00
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Muçarela 4,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Trocar cheddar p/ muçarela
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Pão de Brioche
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem salada
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Sem cebola
+              </div>
+            </div>
+  
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Fanta Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Sprite Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Schweppes Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Guaraná Lata 9,00
+              </div>
+            </div>
+
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="border-radius: 2px;">
+                <input type="checkbox" aria-label="Chebox">Fritas + Coca zero Lata 9,00
+              </div>
+            </div>
+
+          </div>
+          
+        </li>
+      </ul>
+      <!-- fim das config dos adicionais -->
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a onclick="adict_australian('australian')" href="#" class="card-link">Editar</a>
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+  </div>
+  <!-- final do menu  hamburguer-->
+
+  <!-- menu porcao -->
+  <div class="tab-pane fade" id="pills-porcao" role="tabpanel" aria-labelledby="pills-porcao-tab">
+
+    <!-- torresmo de rolo -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Torresmo de Rolo <b>59,00</b></h5>
+        <p class="card-text">700g + acompanhamento (servido somente nas quartas-feiras)</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+     <!-- alcatra acebolada -->
+     <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Alcatra acebolada <b>40,00</b></h5>
+        <p class="card-text">400g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- alcatra acebolada batata mucarela e bacon -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Alcatra Acebolada Batata mucarela e bacon <b>50,00</b></h5>
+        <p class="card-text"></p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- alcatra com mandioca -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Alcatra com Mandioca <b>40,00</b></h5>
+        <p class="card-text">400g + mandioca 250g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- alcatra com batata -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Alcatra com batata <b>40,00</b></h5>
+        <p class="card-text"></p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- Frango a passarinho -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Frango a Passarinho <b>25,00</b></h5>
+        <p class="card-text">500g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- tulipa -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Tulipa <b>26,00</b></h5>
+        <p class="card-text">400g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- tulipa com bbq -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Tulipa com BBQ<b>30,00</b></h5>
+        <p class="card-text">400g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- calabresa acebolada -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Calabresa Acebolada <b>26,00</b></h5>
+        <p class="card-text">400g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- calabresa com batata -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Calabresa com Batata <b>27,00</b></h5>
+        <p class="card-text">400g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- tilapia -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Tilapia <b>45,00</b></h5>
+        <p class="card-text">400g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- kibe -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Kibe Recheado com Queijo <b>25,00</b></h5>
+        <p class="card-text">400g</p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
+
+    <!-- salada -->
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" src="imagens/poção.jpg" alt="Imagem de capa do card">
+      <div class="card-body">
+        <h5 class="card-title">Salada <b>7,00</b></h5>
+        <p class="card-text"></p>
+      </div>
+      <!-- botões de adicionar produto e editar -->
+      <div class="card-body">
+        <a href="#" class="card-link">Adicionar</a>
+      </div>
+    </div><br>
     
 
 
+  </div>
+  <!-- final menu porcao -->
+
+  <!-- menu refrigerante -->
+  <div class="tab-pane fade" id="pills-refrigerante" role="tabpanel" aria-labelledby="pills-refrigerante-tab">
 
   </div>
-  <div class="tab-pane fade" id="pills-porcao" role="tabpanel" aria-labelledby="pills-porcao-tab">...</div>
-  <div class="tab-pane fade" id="pills-refrigerante" role="tabpanel" aria-labelledby="pills-refrigerante-tab">...</div>
-  <div class="tab-pane fade" id="pills-cerveja" role="tabpanel" aria-labelledby="pills-cerveja-tab">...</div>
+  <!-- final menu refrigerante -->
+
+  <!-- menu cerveja -->
+  <div class="tab-pane fade" id="pills-cerveja" role="tabpanel" aria-labelledby="pills-cerveja-tab">
+
+  </div>
+  <!-- final menu cerveja -->
 </div>
 
 

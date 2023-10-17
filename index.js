@@ -1,8 +1,7 @@
 //
 
 
-//adicionais hamburgueres
-
+//hamburgueres
 // chicken
 //mostra/oculta adicionais
 function adict_chicken() {
@@ -182,4 +181,16 @@ function adict_australian() {
     else
         document.getElementById('australian').style.display = 'none';
 }
-// adicionais porções
+
+
+//porções
+
+// torresmo de rolo
+//mostra/oculta adicionais
+// function adict_torresmoRolo() {
+//     var display = document.getElementById('torresmoRolo').style.display;
+//     if(display == "none")
+//         document.getElementById('torresmoRolo').style.display = 'block';
+//     else
+//         document.getElementById('torresmoRolo').style.display = 'none';
+// }
