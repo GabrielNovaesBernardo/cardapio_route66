@@ -123,6 +123,21 @@ function adict_routeCalabresa() {
 }
 
 //paulistinha
+//verifica o dia da semana pra mostrar ele no site
+let dataAtual = new Date();
+
+//(0 é domingo, 1 é segunda-feira, ..., 4 é quinta-feira)
+let diaDaSemana = dataAtual.getDay();
+
+// Verifique se hoje é quinta-feira
+if(diaDaSemana === 4) {
+    // Se for quinta-feira
+    document.getElementById("paulistinha").style.display = "block";
+} else {
+    // Se não for quinta-feira
+    document.getElementById("paulistinha").style.display = "none";
+}
+
 //mostra/oculta adicionais
 function adict_paulistinha() {
     var display = document.getElementById('paulistinha').style.display;
@@ -186,11 +201,21 @@ function adict_australian() {
 //porções
 
 // torresmo de rolo
-//mostra/oculta adicionais
-// function adict_torresmoRolo() {
-//     var display = document.getElementById('torresmoRolo').style.display;
-//     if(display == "none")
-//         document.getElementById('torresmoRolo').style.display = 'block';
-//     else
-//         document.getElementById('torresmoRolo').style.display = 'none';
-// }
+//verifica o dia da semana pra mostrar ele no site
+//let dataAtual = new Date();
+
+//(0 é domingo, 1 é segunda-feira, ..., 3 é quarta-feira)
+let diaDaSemana = dataAtual.getDay();
+
+// Verifique se hoje é quarta-feira
+if(diaDaSemana === 3) {
+    // Se for quarta-feira
+    document.getElementById("torresmo").style.display = "block";
+} else {
+    // Se não for quarta-feira
+    document.getElementById("torresmo").style.display = "none";
+}
+
+
+
+
