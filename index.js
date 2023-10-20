@@ -130,7 +130,7 @@ let dataAtual = new Date();
 let diaDaSemana = dataAtual.getDay();
 
 // Verifique se hoje é quinta-feira
-if(diaDaSemana === 4) {
+if(diaDaSemana === 5) {
     // Se for quinta-feira
     document.getElementById("paulistinha").style.display = "block";
 } else {
@@ -196,26 +196,5 @@ function adict_australian() {
     else
         document.getElementById('australian').style.display = 'none';
 }
-
-
-//porções
-
-// torresmo de rolo
-//verifica o dia da semana pra mostrar ele no site
-//let dataAtual = new Date();
-
-//(0 é domingo, 1 é segunda-feira, ..., 3 é quarta-feira)
-let diaDaSemana = dataAtual.getDay();
-
-// Verifique se hoje é quarta-feira
-if(diaDaSemana === 3) {
-    // Se for quarta-feira
-    document.getElementById("torresmo").style.display = "block";
-} else {
-    // Se não for quarta-feira
-    document.getElementById("torresmo").style.display = "none";
-}
-
-
 
 

@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+body{
+    
+    background-image: url(imagens/Background.png);
+}
+.nav-menu{
+    margin: auto;
+    margin-top: 15px;
+    
+}
+main{
+    margin: auto;
+}
