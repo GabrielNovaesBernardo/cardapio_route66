@@ -9,8 +9,7 @@
     <title>Route66</title>
 </head>
 <body>
-        <main style="margin-top: 50%;">
-            
+        <main style="margin-top: 10%;">
             <div class="card text-center">
                 <div class="card-header">
                   <b>Resumo do Seu Pedido</b>
@@ -23,16 +22,94 @@
 
                   <!-- entrada do resumo do pedido -->
                   <p class="card-text" id="resumoPeido">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde et, culpa quod quisquam similique soluta molestiae! Nisi asperiores dignissimos atque unde cum ea, voluptatibus delectus animi! Labore assumenda perspiciatis nesciunt.
                     <!-- descição dos produtos são impressas aqui -->
                   </p>
+                </div>
+              </div><br>
 
-                  
+              <!-- nome e endereço -->
+              <div class="input-group" style="display: flex; flex-direction: column; ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Nome</span>
                 </div>
-                <div class="card-footer text-muted" style="display: flex; justify-content: center; gap: 10px;">
-                  <a href="#" class="btn btn-primary" style="background-color: red; border: none;box-shadow: 1.5px 1.5px 5px black;">Cancelar</a>
-                  <a href="#" class="btn btn-primary" style="background-color: green; border: none; width: 60%; box-shadow: 1.5px 1.5px 5px black;">Confirmar Pedido</a>
+                <input type="text" aria-label="First name" class="form-control" style="width: 100%;">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">endereço</span>
                 </div>
+                <input type="text" aria-label="Last name" class="form-control" style="width: 100%;">
+
+                <!-- confirmação da cidade -->
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Cidade</span>
+                </div>
+                <select class="form-control form-control-sm" style="width: 150px;">
+                  <option></option>
+                  <option>Tapejara</option>
+                  <option>Cianorte</option>
+                  <option>Outra Cidade</option>
+                </select>
+                <br><br>
+  
               </div>
+              
+              
+                        <!-- forma de pagamento -->
+            <div class=" card text-center">
+              <h5>Pagamento</h5>
+              <div class="card-header">
+                <!-- dinheiro -->
+                <div class="input-group mb-3" >
+                  <div class="input-group-prepend" >
+                    <div class="input-group-text"  >
+                      <input type="radio" name="formaPagamento" value="dinheiro">
+                      <b>Dinheiro</b>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- credito -->
+                <div class="input-group mb-3" >
+                  <div class="input-group-prepend" >
+                    <div class="input-group-text"  >
+                      <input type="radio" name="formaPagamento" value="credito">
+                      <b>Cartão credito</b>
+                    </div>
+                  </div>
+                </div>
+                <!-- Debito -->
+                <div class="input-group mb-3" >
+                  <div class="input-group-prepend" >
+                    <div class="input-group-text"  >
+                      <input type="radio" name="formaPagamento" value="debito">
+                      <b>Débito</b>
+                    </div>
+                  </div>
+                </div>
+                <!-- PIX -->
+                <div class="input-group mb-3" >
+                  <div class="input-group-prepend" >
+                    <div class="input-group-text"  >
+                      <input type="radio" name="formaPagamento" value="pix">
+                      <b>PIX</b>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+
+
+
+              <div class="card-footer text-muted" style="display: flex; justify-content: center; gap: 10px; ">
+                <a href="#" class="btn btn-primary" style="background-color: red; border: none;box-shadow: 1.5px 1.5px 5px black;">Cancelar</a>
+                <a href="#" class="btn btn-primary" style="background-color: green; border: none; width: 60%; box-shadow: 1.5px 1.5px 5px black;">Confirmar Pedido</a>
+              </div>
+            </div>  
+
         </main>
 
 
