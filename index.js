@@ -197,4 +197,9 @@ function adict_australian() {
         document.getElementById('australian').style.display = 'none';
 }
 
-
+window.addEventListener('DOMContentLoaded', (event) => {
+    const productElement = document.querySelector('#torresmo .card-title b');
+    const productPrice = productElement.dataset.price;
+    const productDescription = productElement.parentElement.textContent.trim();
+    console.log(`Descrição do produto: ${productDescription}, Preço: ${productPrice}`);
+});
